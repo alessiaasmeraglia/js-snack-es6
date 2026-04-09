@@ -38,3 +38,52 @@ for (let i = 1; i < biciDaCorsa.length; i++) {
 }
 
 console.log("La bici con peso minore è:", biciPiuLeggera);
+
+
+const squadre = [
+    { 
+        nome: 'Juventus',
+        punti: 0,
+        falliSubiti: 0 
+    },
+    { 
+        nome: 'Milan',
+        punti: 0,
+        falliSubiti: 0
+    },
+    { 
+        nome: 'Inter',
+        punti: 0,
+        falliSubiti: 0
+    },
+    { 
+        nome: 'Roma',
+        punti: 0,
+        falliSubiti: 0 
+    }
+];
+
+function numeroRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// aggiorno i valori random
+for (const squadra of squadre) {
+    squadra.punti = numeroRandom(1, 100);
+    squadra.falliSubiti = numeroRandom(1, 50);
+}
+
+// creo il nuovo array con solo nome e falli subiti
+const nuovoArray = [];
+
+for (const squadra of squadre) {
+    nuovoArray.push(
+        {
+            nome: squadra.nome,
+            falliSubiti: squadra.falliSubiti
+        }
+    );
+}
+
+console.log(squadre);
+console.log(nuovoArray);
