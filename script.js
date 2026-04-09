@@ -31,11 +31,12 @@ const biciDaCorsa = [
 
 let biciPiuLeggera = biciDaCorsa[0];
 
-for (let i = 1; i < biciDaCorsa.length; i++) {
-    if (biciDaCorsa[i].peso < biciPiuLeggera.peso) {
-        biciPiuLeggera = biciDaCorsa[i];
+for (const bici of biciDaCorsa) {
+    if (bici.peso < biciPiuLeggera.peso) {
+        biciPiuLeggera = bici;
     }
 }
+
 
 console.log("La bici con peso minore è:", biciPiuLeggera);
 
