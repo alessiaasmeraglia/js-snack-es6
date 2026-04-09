@@ -85,5 +85,5 @@ for (const squadra of squadre) {
     );
 }
 
-console.log(squadre);
-console.log(nuovoArray);
+console.log("Array completo squadre:", squadre);
+console.log("Array con nome e falli subiti:", nuovoArray);
