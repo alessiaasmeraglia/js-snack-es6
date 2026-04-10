@@ -49,7 +49,7 @@ console.log("La bici con peso minore è:", biciPiuLeggera);
 // creo l'array di squadre con nome, punti e falli subiti
 const squadre = [
     { 
-        nome: 'Juventus',
+        nome: 'Napoli',
         punti: 0,
         falliSubiti: 0 
     },
