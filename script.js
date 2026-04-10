@@ -11,7 +11,7 @@ Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */
 
 // Snack 1
-// creo l'array di oggetti con nome e peso
+// creo l'array di oggetti con nome e peso      AGGIUNGeRE KG
 const biciDaCorsa = [
     {
         nome: 'bici1',
